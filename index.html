@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecnoNews</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+  <!--Menu de navegación-->
+
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">TecnoNews</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Foros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true">Acerca de</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid bg-light py-5 text-center">
+    <div class="row">
+      <h1 class="display-4">Bienvenidos a TecnoNews</h1>
+      <p class="lead">Tu fuente confiable de noticias tecnológicas</p>
+    </div>
+  </div>
+
+  <!--Carrusel de imágenes-->
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="max-height: 800px;">
+        <img src="carrusel/imagen1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>Amenazas Invisibles</h5>
+          <p>Explora los riesgos digitales que enfrentamos cada día y cómo proteger tus datos en un mundo
+            hiperconectado.</p>
+          <button type="button" class="btn btn-outline-light">Saber más</button>
+        </div>
+      </div>
+      <div class="carousel-item" style="max-height: 800px;">
+        <img src="carrusel/imagen2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>Tecnología que piensa</h5>
+          <p>Cómo la inteligencia artificial está cambiando la forma en que vivimos y decidimos.</p>
+          <button type="button" class="btn btn-outline-light">Saber más</button>
+        </div>
+      </div>
+      <div class="carousel-item" style="max-height: 800px;">
+        <img src="carrusel/imagen3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>Python domina</h5>
+          <p>El lenguaje más usado para crear apps web, móviles e IA. Frameworks como Django y FastAPI lo hacen
+            imbatible.</p>
+          <button type="button" class="btn btn-outline-light">Saber más</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--Botones de categorías-->
+
+  <div class="container-fluid bg-light py-5 text-center">
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-2"><button type="button" class="btn btn-outline-primary border-0">Lenguajes
+      </div>
+      </button>
+      <div class="col-sm-6 col-md-4 col-lg-2 bg"><button type="button"
+          class="btn btn-outline-dark border-0">Ciberseguridad</button></div>
+      <div class="col-sm-6 col-md-4 col-lg-2"><button type="button"
+          class="btn btn-outline-success border-0">Smartphones</button></div>
+      <div class="col-sm-6 col-md-4 col-lg-2"><button type="button"
+          class="btn btn-outline-secondary border-0">Gadgets</button></div>
+      <div class="col-sm-6 col-md-4 col-lg-2"><button type="button" class="btn btn-outline-danger border-0">IA y
+          Robots</button></div>
+      <div class="col-sm-6 col-md-4 col-lg-2"><button type="button" class="btn btn-outline-warning border-0">Computación
+          Cuántica</button></div>
+    </div>
+  </div>
+
+
+  <!--Tarjetas de contenido-->
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card border-0" style="max-height: 374;">
+          <img src="tarjetas/tarjeta1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Misión Zuyat</h5>
+            <p class="card-text">La UDB lanza la primera sonda estratosférica de El Salvador. Diseñada en 3D, alcanzó
+              más de 30km y marcó historia científica.</p>
+            <button type="button" class="btn btn-outline-info">Saber más</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0">
+          <img src="tarjetas/tarjeta2.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Majorana 1</h5>
+            <p class="card-text">Microsoft presenta su primer chip cuántico con materia topológica. Ocho qubits estables
+              que prometen revolucionar la computación.</p>
+            <button type="button" class="btn btn-outline-info">Saber más</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0">
+          <img src="tarjetas/tarjeta3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">iPhone 17 Pro</h5>
+            <p class="card-text">Chip A19 Pro, cámara Fusion de 48 MP y diseño unibody. El iPhone más potente hasta
+              ahora, con IA integrada y vapor cooling.</p>
+            <button type="button" class="btn btn-outline-info">Saber más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h1 class="text-center display-4">¿Quiénes somos?</h1>
+  </div>
+
+  <!--Tarjetas horizontales-->
+
+  <div class="container mt-5">
+    <div class="card mb-3 border-0">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="tarjetas/tarjetah1.webp" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">TecnoNews</h5>
+            <p class="card-text">Somos una plataforma independiente dedicada a la divulgación tecnológica desde El
+              Salvador. Nuestro enfoque combina claridad visual, curaduría rigurosa y pasión por la innovación. Creemos
+              en el poder de la información bien contada para transformar ideas en acción. Aquí encontrarás noticias
+              verificadas, análisis útiles y una narrativa que conecta lo técnico con lo humano.</p>
+            <button type="button" class="btn btn-outline-success">Conocenos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="card mb-3 border-0">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Nuestra filofoía</h5>
+            <p class="card-text">En TecnoNews entendemos la tecnología como una narrativa en constante evolución.
+              Nuestra filosofía se basa en contar historias que informan sin saturar, que explican sin complicar y que
+              conectan lo técnico con lo cotidiano. Creemos que la claridad, la verificación y el diseño son esenciales
+              para que la información realmente transforme.</p>
+            <button type="button" class="btn btn-outline-success">Saber más</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="tarjetas/tarjetah2.webp" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Formulario de contacto-->
+
+  <section class="container py-5 border-top">
+    <h2 class="text-center mb-4 display-4">¿Quieres contactarnos?</h2>
+    <p class="text-center mb-5 text-muted">
+      En TecnoNews valoramos la conversación. Si tienes dudas, propuestas, notas de prensa o simplemente quieres
+      colaborar, este espacio es para ti.
+    </p>
+
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="email" placeholder="nombre@dominio.com">
+      </div>
+      <div class="col-md-6">
+        <label for="tema" class="form-label">Tema</label>
+        <input type="text" class="form-control" id="tema" placeholder="¿Cuál es el tema?">
+      </div>
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="phone" placeholder="+503 ...">
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">Mensaje</label>
+        <textarea id="message" class="form-control" rows="5"
+          placeholder="¿Qué deseas compartir con nosotros?"></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button class="btn btn-success px-4" type="submit">Enviar</button>
+      </div>
+    </form>
+  </section>
+
+  <!--Tabla del equipo-->
+
+  <section class="container py-5 border-top">
+    <h2 class="text-center mb-4">Equipo detrás de TecnoNews</h2>
+    <p class="text-center text-muted mb-5">
+      Conoce a quienes hacen posible esta plataforma.
+    </p>
+
+    <div class="table-responsive">
+      <table class="table align-middle text-light"
+        style="background-color: transparent; border-collapse: separate; border-spacing: 0;">
+        <thead>
+          <tr style="border-bottom: 2px solid #28a745;">
+            <th style="border-bottom: 2px solid #28a745;">Nombre</th>
+            <th style="border-bottom: 2px solid #28a745;">Rol</th>
+            <th style="border-bottom: 2px solid #28a745;">Área</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid #6c757d;">
+            <td style="border-bottom: 1px solid #6c757d;">Erika</td>
+            <td style="border-bottom: 1px solid #6c757d;">Redactora</td>
+            <td style="border-bottom: 1px solid #6c757d;">Ciencia y espacio</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #6c757d;">
+            <td style="border-bottom: 1px solid #6c757d;">Bryan</td>
+            <td style="border-bottom: 1px solid #6c757d;">Editor</td>
+            <td style="border-bottom: 1px solid #6c757d;">Tecnología y diseño</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #6c757d;">
+            <td style="border-bottom: 1px solid #6c757d;">Wilber</td>
+            <td style="border-bottom: 1px solid #6c757d;">Curador de contenido</td>
+            <td style="border-bottom: 1px solid #6c757d;">Innovación y móviles</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #6c757d;">
+            <td style="border-bottom: 1px solid #6c757d;">Hamilton</td>
+            <td style="border-bottom: 1px solid #6c757d;">Investigador</td>
+            <td style="border-bottom: 1px solid #6c757d;">Hardware y tendencias</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #6c757d;">
+            <td style="border-bottom: 1px solid #6c757d;">Héctor</td>
+            <td style="border-bottom: 1px solid #6c757d;">Analista</td>
+            <td style="border-bottom: 1px solid #6c757d;">Software libre y comunidad</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!--Footer-->
+
+  <footer>
+    <div class="container-fluid mt-5 bg-dark p-5 text-center">
+      <div class="row">
+        <div class="col"><a href="#" class="text-decoration-none text-success"><i
+              class="bi bi-facebook"><br></i>Facebook</a>
+        </div>
+        <div class="col"><a href="#" class="text-decoration-none text-success"><i
+              class="bi bi-twitter-x"></i><br>Twitter/X</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-success"><i
+              class="bi bi-instagram"></i><br>Instagram</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-success"><i
+              class="bi bi-person-lines-fill"></i><br>Soporte</a></div>
+        <small class="text-white-50" style="text-align: end;">© 2025 TecnoNews. Todos los
+          derechos reservados.</small>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
